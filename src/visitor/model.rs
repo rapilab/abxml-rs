@@ -138,8 +138,8 @@ pub type RefPackage<'a> = Rc<RefCell<Library<'a>>>;
 
 #[derive(Default, Debug)]
 pub struct Resources<'a> {
-    packages: HashMap<u8, Library<'a>>,
-    main_package: Option<u8>,
+    pub packages: HashMap<u8, Library<'a>>,
+    pub main_package: Option<u8>,
 }
 
 impl<'a> Resources<'a> {
