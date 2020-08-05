@@ -42,9 +42,9 @@ impl BufferedDecoder {
 
 #[derive(Debug)]
 pub struct Decoder<'a> {
-    visitor: ModelVisitor<'a>,
-    buffer_android: &'a [u8],
-    buffer_apk: &'a [u8],
+    pub visitor: ModelVisitor<'a>,
+    pub buffer_android: &'a [u8],
+    pub buffer_apk: &'a [u8],
 }
 
 impl<'a> Decoder<'a> {
